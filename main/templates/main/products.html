@@ -1,0 +1,64 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+
+{% block title %} Головна сторінка {% endblock %}
+
+
+{% block content %}
+    <div class="productsWrapper">
+        <h1>Види товарів</h1>
+        <p>Тут ви можете знайти все, що вам потрібно для вашого авто.</p>
+
+        <h3>Популярні пропозиції авто</h3>
+        <div class="listOfProducts">
+            <div class="productItem">
+                <img src="{% static 'main/img/product1.webp' %}" >
+                <h5>Машина №1</h5>
+                <span>Хороша пропозиція!</span>
+            </div>
+
+            <div class="productItem">
+                <img src="{% static 'main/img/product2.webp' %}" >
+                <h5>Машина №1</h5>
+                <span>Хороша пропозиція!</span>
+            </div>
+
+            <div class="productItem">
+                <img src="{% static 'main/img/product3.jpeg' %}" >
+                <h5>Машина №1</h5>
+                <span>Хороша пропозиція!</span>
+            </div>
+
+            <div class="productItem">
+                <img src="{% static 'main/img/product4.png' %}" >
+                <h5>Машина №1</h5>
+                <span>Хороша пропозиція!</span>
+            </div>
+
+            <div class="productItem">
+                <img src="{% static 'main/img/product5.jpeg' %}" >
+                <h5>Машина №1</h5>
+                <span>Хороша пропозиція!</span>
+            </div>
+
+            <div class="productItem">
+                <img src="{% static 'main/img/product6.jpeg' %}" >
+                <h5>Машина №1</h5>
+                <span>Хороша пропозиція!</span>
+            </div>
+
+            <div class="productItem">
+                <img src="{% static 'main/img/product7.jpeg' %}" >
+                <h5>Машина №1</h5>
+                <span>Хороша пропозиція!</span>
+            </div>
+
+            <div class="productItem">
+                <img src="{% static 'main/img/product8.png' %}" >
+                <h5>Машина №1</h5>
+                <span>Хороша пропозиція!</span>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,76 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}  {% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+</head>
+<body>
+
+    <header>
+        <div class="topHeader">
+            <div class="infoBlock">
+                <span>+38 096 555 5555</span>
+                <span>м. Київ, вул. Перемоги 1</span>
+            </div>
+        </div>
+
+        <div class="bottomHeader">
+            <div>
+                <img src="iconHotel" alt="" />
+                <h2>"Люкс Авто"</h2>
+            </div>
+
+            <nav>
+                <a href="/" class="main" >Головна </a>
+                <a href="/products" class="services">Товари та послуги</a>
+                <a href="/prices" class="prices" >Ціни</a>
+                <a href="/contact" class="contactUs" >Зв'язатись з нами</a>
+            </nav>
+        </div>
+    </header>
+
+
+    {% block content %}
+
+    {% endblock %}
+
+
+    <footer>
+        <img class="footerImage" src="footer_image" alt="" />
+
+        <div class="footerBlock">
+            <h2>Маєте питання?</h2>
+            <h4>Зателефонуйте, або напишіть</h4>
+
+            <div class="socialInformation">
+                <div class="infoBlock" >
+                    <span>Phone</span>
+                    <span>+38 096 555 5555</span>
+                </div>
+
+                <div class="infoBlock" >
+                    <span>Email</span>
+                    <span>info@lux-avto.com</span>
+                </div>
+
+                <div class="socialBlock" >
+                    <span>SOCIAL</span>
+                    <div class="socialLinks" >
+                        <img class="iconFacebook" src="{% static 'main/img/facebook.png' %}" alt="" />
+                        <img class="iconInstagram" src="{% static 'main/img/instagram.png' %}" alt="" />
+                        <img class="iconTwitter" src="{% static 'main/img/twitter.png' %}" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

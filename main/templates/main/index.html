@@ -1,0 +1,66 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+
+{% block title %} Головна сторінка {% endblock %}
+
+
+{% block content %}
+    <div class="mainWrapper">
+        <h1>Ласкаво просимо до нашого автомагазину!</h1>
+        <p>Ми пропонуємо широкий вибір автомобілів і послуг для задоволення ваших потреб.
+            Якщо ви шукаєте новий або вживаний автомобіль, або потребуєте технічного обслуговування
+            або ремонту, ми тут, щоб вам допомогти.</p>
+
+        <h3>Популярні пропозиції авто</h3>
+        <div class="listOfCars">
+            <div class="carItem">
+                <img src="{% static 'main/img/1.jpeg' %}" >
+                <h5>Машина №1</h5>
+                <span>Хороша пропозиція!</span>
+            </div>
+
+            <div class="carItem">
+                <img src="{% static 'main/img/2.jpeg' %}" >
+                <h5>Машина №1</h5>
+                <span>Хороша пропозиція!</span>
+            </div>
+
+            <div class="carItem">
+                <img src="{% static 'main/img/3.jpeg' %}" >
+                <h5>Машина №1</h5>
+                <span>Хороша пропозиція!</span>
+            </div>
+
+            <div class="carItem">
+                <img src="{% static 'main/img/4.jpeg' %}" >
+                <h5>Машина №1</h5>
+                <span>Хороша пропозиція!</span>
+            </div>
+
+            <div class="carItem">
+                <img src="{% static 'main/img/5.jpeg' %}" >
+                <h5>Машина №1</h5>
+                <span>Хороша пропозиція!</span>
+            </div>
+
+            <div class="carItem">
+                <img src="{% static 'main/img/6.webp' %}" >
+                <h5>Машина №1</h5>
+                <span>Хороша пропозиція!</span>
+            </div>
+
+            <div class="carItem">
+                <img src="{% static 'main/img/7.jpeg' %}" >
+                <h5>Машина №1</h5>
+                <span>Хороша пропозиція!</span>
+            </div>
+
+            <div class="carItem">
+                <img src="{% static 'main/img/8.jpeg' %}" >
+                <h5>Машина №1</h5>
+                <span>Хороша пропозиція!</span>
+            </div>
+        </div>
+    </div>
+{% endblock %}
